@@ -1,0 +1,14 @@
+# How to set up PHP Storm debugger with X-Debug
+
+1. Set up php executable - Settings->PHP (enter path to php executable)
+2. Set up php.ini for selected interpreter - find apropirate php.ini file and add following
+	[xdebug]
+	zend_extension="/path/to/xdebug/module" (comes preinstaled with MAMP)
+	xdebug.remote_enable=1
+	xdebug.remote_host=localhost
+	xdebug.remote_port=9000
+3. Refresh button in PHP storm settings next to field for entering path to php executable (step 1)
+4. Restart server
+5. Enable Debugging in browser (Debugg plugin in chrome (green bug at the right side of search field))
+6. Set up Run/Debug configurationtions (top center part of PHP Storm IDE)
+7. Start listening PHP Storm (phone icon next to Run/Debug configuration)

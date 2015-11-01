@@ -1,0 +1,16 @@
+# Rails cheet sheet
+
+## Mysql
+
+### problems with libmysqlclient.18.dylib
+
+libmysqlclient.18.dylib needs to be in path or point to /usr/lib/libmysqlclient.18.dylib by sym link
+
+sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+
+
+### problems with 'libpq-fe.h' for postgres DB
+
+install postgresql with brew
+
+$ brew install postgresql
